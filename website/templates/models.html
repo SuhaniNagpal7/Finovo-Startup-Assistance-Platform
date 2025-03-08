@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+        <link rel="stylesheet" href="../static/img2/style.css">
+    </head>
+    <body background="../static/img2/Your%20Virtual%20Friend.png">
+         <!------Navbar------>
+     <nav class="navbar">
+        <div class="brand-title">FINOVO</div>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="/homesort">Home</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="/logout"><button type="button" class="logout" value="LogOut"><b>LogOut</b></button></a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="main">
+        <img src="../static/img2/growth.png" class="img1" alt="">
+      <div class="container">
+        <div class="con1">
+         <h3>Analysis of <u>result</u> upon your entered data.</h3>
+        </div>
+        <div class="con2">
+            <h3>Our model says that </h3>
+            <br>
+            <p>1. The chance of your startup failing given you don't change your current finance schemes is : {{data[0]}}</p>
+            <br>
+            <p>2. The Average valuation based on past and current market trends is : {{data[1]}}</p>
+           </div>
+        <button type="button" value="submit" class="update">Update The Entered Data</button>
+      </div>
+      </div>
+      <center><div class="con3">
+        <p>Meet our two AI models: the Valuation Predictor and Survival Analyzer. The Valuation Predictor analyzes the date of start, city, topic, and subcategory to predict a startup's current valuation. It provides valuable insights for investment decisions and growth strategies. The Survival Analyzer assesses a startup's probability of survival if they don't change their finance systems. It evaluates expenditure patterns and financial risks, helping optimize resource allocation for long-term sustainability. These AI models revolutionize decision-making for startups, equipping entrepreneurs with powerful tools for success.</p>
+      </div></center>   
+    </body>
+</html>

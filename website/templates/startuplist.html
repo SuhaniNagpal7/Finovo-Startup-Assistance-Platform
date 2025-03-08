@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>
+            List
+        </title>
+        <link rel="stylesheet" href="../static/js/list.css">
+    </head>
+    <body>
+
+        <nav class="navbar">
+            <div class="brand-title">FINOVO</div>
+            <div class="navbar-links">
+              <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="#">My Investments</a></li>
+                  <a href="/logout"><li><button type="button" class="logout" value="LogOut"><b>LogOut</b></button></li></a>
+              </ul>
+            </div>
+          </nav>
+
+          <!-------Container 1-------->
+          <div class="container">
+            <img src="../static/js/lgc079_hero_what-is-investing_v1.avif" alt="Snow" style="width:100%;">
+            <div class="centered">Investable Buiseness</div>
+          </div>
+         <div class="container2">
+            <div class="card dark">
+              <div class="card-body">
+                <div class="text-section">
+                  <p class="card-title" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><b>Name:</b>SoulMatesAI</p>
+                  <p class="card-text" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><b>Description:</b>
+Introducing "SoulMatesAI," an AI-based matrimonial site that uses advanced algorithms and machine learning to match individuals based on compatibility, interests, and values. With enhanced privacy measures and a user-friendly interface, SoulMatesAI offers a secure and seamless experience in finding your perfect life partner. Say goodbye to traditional matchmaking methods and embark on your journey to true happiness with SoulMatesAI.</p>
+                </div>
+                <div class="cta-section">
+                    <div class="tick"><p>Verified &#10004;</p></div>
+                    <a href="/startupdetails"> <button type="button" value="know" class="know"><b>Know More</b></button></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        {% for row in data %}
+          <div class="container2">
+            <div class="card dark">
+              <div class="card-body">
+                <div class="text-section">
+                  <p class="card-title" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><b>Name:</b>{{row[0]}}</p>
+                  <p class="card-text" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><b>Description:</b> {{row[1]}}</p>
+                </div>
+                <div class="cta-section">
+                    <div class="tick"><p>Verified &#10004;</p></div>
+                    <a href="/startupdetails"> <button type="button" value="know" class="know"><b>Know More</b></button></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+            {% endfor %}
+    </body>
+</html>
